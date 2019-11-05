@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -23411,7 +23411,7 @@ Source: &lt;a href="https://psearch.en.murata.com/inductor/product/DFE322520FD-3
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10K"/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2K"/>
-<part name="SW1" library="Switch" library_urn="urn:adsk.eagle:library:11396471" deviceset="B3U-1000P" device="" package3d_urn="urn:adsk.eagle:package:10899220/2"/>
+<part name="POWER" library="Switch" library_urn="urn:adsk.eagle:library:11396471" deviceset="B3U-1000P" device="" package3d_urn="urn:adsk.eagle:package:10899220/2"/>
 <part name="SW2" library="Switch" library_urn="urn:adsk.eagle:library:11396471" deviceset="B3U-1000P" device="" package3d_urn="urn:adsk.eagle:package:10899220/2"/>
 <part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP8" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X4" device="" package3d_urn="urn:adsk.eagle:package:22461/2" value="nRF24L01+ Module"/>
@@ -24544,7 +24544,7 @@ Relay Section (relays, leds, mosfets)
 <attribute name="NAME" x="36.6014" y="74.93" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="36.322" y="80.01" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SW1" gate="G$1" x="76.2" y="116.84" smashed="yes">
+<instance part="POWER" gate="G$1" x="76.2" y="116.84" smashed="yes">
 <attribute name="NAME" x="71.12" y="120.396" size="1.778" layer="95"/>
 <attribute name="VALUE" x="71.12" y="111.76" size="1.778" layer="96"/>
 </instance>
@@ -24667,7 +24667,7 @@ Relay Section (relays, leds, mosfets)
 <wire x1="63.5" y1="104.14" x2="63.5" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="116.84" x2="66.04" y2="116.84" width="0.1524" layer="91"/>
 <junction x="63.5" y="104.14"/>
-<pinref part="SW1" gate="G$1" pin="1"/>
+<pinref part="POWER" gate="G$1" pin="1"/>
 <pinref part="Q3" gate="G$1" pin="S"/>
 </segment>
 </net>
@@ -24708,7 +24708,7 @@ Relay Section (relays, leds, mosfets)
 <wire x1="88.9" y1="104.14" x2="88.9" y2="116.84" width="0.1524" layer="91"/>
 <junction x="88.9" y="104.14"/>
 <wire x1="88.9" y1="116.84" x2="86.36" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="2"/>
+<pinref part="POWER" gate="G$1" pin="2"/>
 <pinref part="Q3" gate="G$1" pin="D"/>
 </segment>
 </net>
