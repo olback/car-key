@@ -12,7 +12,9 @@ void CKController::begin() {
     radio.startListening();
 
     // Set PA level to high, this should be higher than on the remote!
-    radio.setPALevel(RF24_PA_HIGH);
+    radio.setPALevel(RF24_PA_MIN);
+
+    Serial.println("Controller started!");
 
 }
 

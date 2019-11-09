@@ -9,9 +9,8 @@ void CKBase::init() {
 
     // Begin radio
     radio.begin();
-    radio.setAutoAck(1);
-    radio.enableDynamicAck();
-    radio.setRetries(1, 15);
+    radio.setAutoAck(true);
+    radio.setRetries(4, 15);
     radio.setDataRate(RF24_250KBPS);
 
     // Configure interrupt pin
@@ -21,20 +20,26 @@ void CKBase::init() {
 
 void CKBase::_debug() {
 
-    #ifdef DEBUG
-        Serial.println("-- Radio Info --");
-        radio.printDetails();
-        Serial.println();
-    #endif
+    Serial.println("-- Radio Info --");
+    radio.printDetails();
+    Serial.println();
 
     Serial.println("-- CKBase Info --");
     Serial.println("<add output>");
 
 }
 
-void CKBase::readMsg(void *msg, uint8_t length) {
+bool CKBase::write(const void *msg, uint8_t length) {
+
+    return radio.write(msg, length);
+
+}
+
+bool CKBase::read(void *msg, uint8_t length) {
 
     radio.read(msg, length);
+
+    return true;
 
 }
 

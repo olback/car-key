@@ -1,5 +1,7 @@
 #include <CKController.h>
 
+// #define DEBUG
+
 #ifdef DEBUG
   #include <printf.h>
 #endif
@@ -8,40 +10,32 @@ CKController controller;
 
 void setup() {
 
-  #ifdef DEBUG
-    printf_begin();
-  #endif
+    controller.begin();
 
-  controller.begin();
-  controller.attachInterrupt(recvMsg);
+    #ifdef DEBUG
+        printf_begin();
+        controller._debug();
+    #endif
 
-  controller._debug();
+    controller.attachInterrupt(recvMsg);
 
 }
 
 void loop() {
 
-  switch(Serial.read()) {
+    // Check voltage
 
-    case 'd': {
-      Serial.println("Debug!");
-      break;
-    }
-
-    default: {
-      Serial.println("No data...");
-      delay(1000);
-    }
-
-  }
+    // Delay
+    delay(1000);
 
 }
 
 void recvMsg() {
 
-  char text[32] = {0};
-  controller.readMsg(&text, sizeof(text));
-  Serial.print("Recv: ");
-  Serial.println(text);
+    char a[32] = {0};
+
+    controller.read(&a, sizeof(a));
+    Serial.print("Recv: ");
+    Serial.println(a);
 
 }

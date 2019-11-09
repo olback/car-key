@@ -32,10 +32,10 @@ public:
     void setKey(uint8_t key[32]);
 
     // Encrypts and sends a message
-    bool sendMsg(void *msg, uint8_t length);
+    bool write(const void *msg, uint8_t length);
 
     // Decrypts a recieved message
-    void readMsg(void *msg, uint8_t length);
+    bool read(void *msg, uint8_t length);
 
     // Increase ID by one
     void increaseId();
@@ -53,10 +53,9 @@ protected:
     RF24 radio = RF24(9, 8);
 
     const uint8_t INTERRUPT_PIN = 2;
-    const uint8_t COUNETR_ADDR = 0;
-    const uint8_t KEY_ADDR = 4;
-    // const uint8_t ADDRESS[5] = { 'C', 'K', 'A', 'D', 'R' };
-    const uint8_t ADDRESS[5] = { '0', '0', '0', '0', '1' };
+    const uint8_t COUNETR_ADDR = 0; // uint32_t - 4 bytes
+    const uint8_t KEY_ADDR = 4; // char[32] - 32 bytes
+    const uint8_t ADDRESS[5] = { 'C', 'K', '0', '0', '1' };
 
     // Encrypt msg with key from readKey()
     void encrypt(uint8_t *msg);

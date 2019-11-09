@@ -1,45 +1,33 @@
-#include <SPI.h>
-#include <nRF24L01.h>
-#include <RF24.h>
+#ifndef ARDUINO
+    #define ARDUINO
+#endif
 
-RF24 radio(9, 8);
+#include <CKRemote.h>
 
-const byte address[6] = "00001";
+CKRemote remote;
 
 void setup() {
 
-  while (!Serial) {
-    Serial.begin(115200);
-  }
+    // Only for testing on Leonardo
+    while (!Serial) {
+        Serial.begin(115200);
+    }
 
-  // Serial.begin(115200);
-
-  radio.begin();
-  radio.setAutoAck(1);
-  radio.setRetries(0, 15);
-  radio.openWritingPipe(address);
-  radio.stopListening();
+    remote.begin();
 
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
 
-  if (Serial.available() > 0) {
-
-    while (Serial.available()) {
-      Serial.read();
-      delay(1);
+    const char a[32] = "12000000000000000000000000000034";
+    Serial.print("Sending... ");
+    bool txs = remote.write(&a, sizeof(a));
+    if (txs) {
+        Serial.println("success");
+    } else {
+        Serial.println("failed");
     }
 
-    Serial.println("Sending...");
-
-    const char text[] = "Hello!";
-    byte a = radio.write(&text, sizeof(text));
-    Serial.println(a);
-
-    delay(1000);
-  
-  }
+    delay(5000);
 
 }
