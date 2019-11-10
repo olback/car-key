@@ -23349,92 +23349,6 @@ Source: &lt;a href="https://psearch.en.murata.com/inductor/product/DFE322520FD-3
 </deviceset>
 </devicesets>
 </library>
-<library name="43650-0500">
-<description>&lt;Molex MICRO-FIT 3.0 Series, Series Number 43650, 3mm Pitch 5 Way 1 Row Right Angle PCB Header, Solder Termination, 5A&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="436500500">
-<description>&lt;b&gt;43650-0500-2&lt;/b&gt;&lt;br&gt;
-</description>
-<pad name="1" x="0" y="0" drill="1.07" diameter="1.605"/>
-<pad name="2" x="-3" y="0" drill="1.07" diameter="1.605"/>
-<pad name="3" x="-6" y="0" drill="1.07" diameter="1.605"/>
-<pad name="4" x="-9" y="0" drill="1.07" diameter="1.605"/>
-<pad name="5" x="-12" y="0" drill="1.07" diameter="1.605"/>
-<hole x="-2.15" y="-4.32" drill="3.05"/>
-<hole x="-9.85" y="-4.32" drill="3.05"/>
-<text x="-6" y="-3.77" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="-6" y="-3.77" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-15.32" y1="0.98" x2="3.32" y2="0.98" width="0.2" layer="51"/>
-<wire x1="3.32" y1="0.98" x2="3.32" y2="-8.92" width="0.2" layer="51"/>
-<wire x1="3.32" y1="-8.92" x2="-15.32" y2="-8.92" width="0.2" layer="51"/>
-<wire x1="-15.32" y1="-8.92" x2="-15.32" y2="0.98" width="0.2" layer="51"/>
-<wire x1="-16.32" y1="2.38" x2="4.32" y2="2.38" width="0.1" layer="51"/>
-<wire x1="4.32" y1="2.38" x2="4.32" y2="-9.92" width="0.1" layer="51"/>
-<wire x1="4.32" y1="-9.92" x2="-16.32" y2="-9.92" width="0.1" layer="51"/>
-<wire x1="-16.32" y1="-9.92" x2="-16.32" y2="2.38" width="0.1" layer="51"/>
-<wire x1="-13" y1="0.98" x2="-15.32" y2="0.98" width="0.1" layer="21"/>
-<wire x1="-15.32" y1="0.98" x2="-15.32" y2="-8.92" width="0.1" layer="21"/>
-<wire x1="-15.32" y1="-8.92" x2="3.32" y2="-8.92" width="0.1" layer="21"/>
-<wire x1="3.32" y1="-8.92" x2="3.32" y2="0.98" width="0.1" layer="21"/>
-<wire x1="3.32" y1="0.98" x2="1.5" y2="0.98" width="0.1" layer="21"/>
-<wire x1="1" y1="0.98" x2="1.5" y2="0.98" width="0.1" layer="21"/>
-<wire x1="0" y1="1.28" x2="0" y2="1.28" width="0.1" layer="21"/>
-<wire x1="0" y1="1.28" x2="0" y2="1.38" width="0.1" layer="21" curve="-180"/>
-<wire x1="0" y1="1.38" x2="0" y2="1.38" width="0.1" layer="21"/>
-<wire x1="0" y1="1.38" x2="0" y2="1.28" width="0.1" layer="21" curve="-180"/>
-</package>
-</packages>
-<symbols>
-<symbol name="43650-0500">
-<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-7.62" x2="15.24" y2="2.54" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="1" x="0" y="0" length="middle"/>
-<pin name="3" x="0" y="-2.54" length="middle"/>
-<pin name="5" x="0" y="-5.08" length="middle"/>
-<pin name="2" x="20.32" y="0" length="middle" rot="R180"/>
-<pin name="4" x="20.32" y="-2.54" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="43650-0500" prefix="J">
-<description>&lt;b&gt;Molex MICRO-FIT 3.0 Series, Series Number 43650, 3mm Pitch 5 Way 1 Row Right Angle PCB Header, Solder Termination, 5A&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://www.molex.com/pdm_docs/sd/436500500_sd.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="43650-0500" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="436500500">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="ALLIED_NUMBER" value="70091000" constant="no"/>
-<attribute name="ALLIED_PRICE-STOCK" value="https://www.alliedelec.com/molex-incorporated-43650-0500/70091000/" constant="no"/>
-<attribute name="DESCRIPTION" value="Molex MICRO-FIT 3.0 Series, Series Number 43650, 3mm Pitch 5 Way 1 Row Right Angle PCB Header, Solder Termination, 5A" constant="no"/>
-<attribute name="HEIGHT" value="5.82mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="Molex" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="43650-0500" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="538-43650-0500" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=538-43650-0500" constant="no"/>
-<attribute name="RS_PART_NUMBER" value="6704755P" constant="no"/>
-<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/6704755P" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="relay" urn="urn:adsk.eagle:library:339">
 <description>&lt;b&gt;Relays&lt;/b&gt;&lt;p&gt;
 &lt;ul&gt;
@@ -26808,6 +26722,84 @@ In this library the device names are the same as the pin names of the symbols, t
 </deviceset>
 </devicesets>
 </library>
+<library name="43045-0600">
+<description>&lt;6 way dual row r/a header,5A 250Vac 3mm Molex MICRO-FIT 3.0 Series, Series Number 43045, 3mm Pitch 6 Way 2 Row Right Angle PCB Header, Solder Termination, 5A&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="43045-0600">
+<description>&lt;b&gt;43045-0600&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="-3" y="4.32" drill="1.07" diameter="1.63"/>
+<pad name="2" x="0" y="4.32" drill="1.07" diameter="1.63"/>
+<pad name="3" x="3" y="4.32" drill="1.07" diameter="1.63"/>
+<pad name="4" x="3" y="7.32" drill="1.07" diameter="1.63"/>
+<pad name="5" x="0" y="7.32" drill="1.07" diameter="1.63"/>
+<pad name="6" x="-3" y="7.32" drill="1.07" diameter="1.63"/>
+<hole x="0" y="0" drill="3"/>
+<text x="-3" y="4.32" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-3" y="4.32" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-6.325" y1="5.31" x2="6.325" y2="5.31" width="0.2" layer="21"/>
+<wire x1="6.325" y1="5.31" x2="6.325" y2="-4.6" width="0.2" layer="21"/>
+<wire x1="6.325" y1="-4.6" x2="-6.325" y2="-4.6" width="0.2" layer="21"/>
+<wire x1="-6.325" y1="-4.6" x2="-6.325" y2="5.31" width="0.2" layer="21"/>
+<wire x1="-6.325" y1="5.31" x2="6.325" y2="5.31" width="0.2" layer="51"/>
+<wire x1="6.325" y1="5.31" x2="6.325" y2="-4.6" width="0.2" layer="51"/>
+<wire x1="6.325" y1="-4.6" x2="-6.325" y2="-4.6" width="0.2" layer="51"/>
+<wire x1="-6.325" y1="-4.6" x2="-6.325" y2="5.31" width="0.2" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="43045-0600">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" length="middle"/>
+<pin name="3" x="0" y="-2.54" length="middle"/>
+<pin name="5" x="0" y="-5.08" length="middle"/>
+<pin name="2" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="4" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="6" x="20.32" y="-5.08" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="43045-0600" prefix="J">
+<description>&lt;b&gt;6 way dual row r/a header,5A 250Vac 3mm Molex MICRO-FIT 3.0 Series, Series Number 43045, 3mm Pitch 6 Way 2 Row Right Angle PCB Header, Solder Termination, 5A&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://www.molex.com/webdocs/datasheets/pdf/en-us/0430450600_PCB_HEADERS.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="43045-0600" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="43045-0600">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ALLIED_NUMBER" value="70090796" constant="no"/>
+<attribute name="ALLIED_PRICE-STOCK" value="http://www.alliedelec.com/molex-incorporated-43045-0600/70090796/" constant="no"/>
+<attribute name="DESCRIPTION" value="6 way dual row r/a header,5A 250Vac 3mm Molex MICRO-FIT 3.0 Series, Series Number 43045, 3mm Pitch 6 Way 2 Row Right Angle PCB Header, Solder Termination, 5A" constant="no"/>
+<attribute name="HEIGHT" value="mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Molex" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="43045-0600" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="538-43045-0600" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=538-43045-0600" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="2332961P" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/2332961P" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -26919,7 +26911,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="C8" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:491551" deviceset="WCAP-ASLI" device="_865080149011" package3d_urn="urn:adsk.eagle:package:491731/2" technology="_8X6,5"/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="J1" library="43650-0500" deviceset="43650-0500" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="K1" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="G5V1" device="" package3d_urn="urn:adsk.eagle:package:24341/1"/>
 <part name="K2" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="G5V1" device="" package3d_urn="urn:adsk.eagle:package:24341/1"/>
@@ -26953,6 +26944,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1u"/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND1" device=""/>
 <part name="E2" library="SparkFun-RF" library_urn="urn:adsk.eagle:library:531" deviceset="ANTENNA-GROUNDED" device="TRACE-15.2MM" package3d_urn="urn:adsk.eagle:package:39575/1"/>
+<part name="J2" library="43045-0600" deviceset="43045-0600" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -28133,10 +28125,6 @@ Relay Section (relays, leds, mosfets)
 <instance part="P+5" gate="VCC" x="198.12" y="149.86" smashed="yes">
 <attribute name="VALUE" x="195.58" y="147.32" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="J1" gate="G$1" x="33.02" y="45.72" smashed="yes">
-<attribute name="NAME" x="36.83" y="53.34" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="36.83" y="50.8" size="1.778" layer="96" align="center-left"/>
-</instance>
 <instance part="GND8" gate="1" x="55.88" y="27.94" smashed="yes">
 <attribute name="VALUE" x="53.34" y="25.4" size="1.778" layer="96"/>
 </instance>
@@ -28213,6 +28201,10 @@ Relay Section (relays, leds, mosfets)
 <attribute name="NAME" x="207.01" y="140.97" size="1.778" layer="95" rot="R270"/>
 <attribute name="TP_SIGNAL_NAME" x="204.47" y="138.43" size="1.778" layer="97" rot="R270"/>
 </instance>
+<instance part="J2" gate="G$1" x="27.94" y="35.56" smashed="yes">
+<attribute name="NAME" x="44.45" y="43.18" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="44.45" y="40.64" size="1.778" layer="96" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -28267,7 +28259,6 @@ Relay Section (relays, leds, mosfets)
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="4"/>
 <wire x1="53.34" y1="43.18" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="43.18" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
@@ -28336,9 +28327,9 @@ Relay Section (relays, leds, mosfets)
 <label x="157.48" y="81.28" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="5"/>
-<wire x1="33.02" y1="40.64" x2="27.94" y2="40.64" width="0.1524" layer="91"/>
-<label x="27.94" y="40.64" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="27.94" y1="35.56" x2="25.4" y2="35.56" width="0.1524" layer="91"/>
+<label x="25.4" y="35.56" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -28467,7 +28458,6 @@ Relay Section (relays, leds, mosfets)
 <wire x1="104.14" y1="48.26" x2="106.68" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="K1" gate="2" pin="P"/>
 <wire x1="106.68" y1="48.26" x2="106.68" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="2"/>
 <pinref part="K2" gate="2" pin="P"/>
 <wire x1="53.34" y1="45.72" x2="106.68" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="45.72" x2="177.8" y2="45.72" width="0.1524" layer="91"/>
@@ -28484,7 +28474,6 @@ Relay Section (relays, leds, mosfets)
 </net>
 <net name="E_LOCK" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="45.72" x2="30.48" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="45.72" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="60.96" x2="99.06" y2="60.96" width="0.1524" layer="91"/>
@@ -28495,7 +28484,6 @@ Relay Section (relays, leds, mosfets)
 </net>
 <net name="E_UNLOCK" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="33.02" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="43.18" x2="27.94" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="63.5" x2="170.18" y2="63.5" width="0.1524" layer="91"/>
