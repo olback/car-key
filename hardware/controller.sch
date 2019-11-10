@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -28125,8 +28125,8 @@ Relay Section (relays, leds, mosfets)
 <instance part="P+5" gate="VCC" x="198.12" y="149.86" smashed="yes">
 <attribute name="VALUE" x="195.58" y="147.32" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND8" gate="1" x="55.88" y="27.94" smashed="yes">
-<attribute name="VALUE" x="53.34" y="25.4" size="1.778" layer="96"/>
+<instance part="GND8" gate="1" x="50.8" y="20.32" smashed="yes">
+<attribute name="VALUE" x="48.26" y="17.78" size="1.778" layer="96"/>
 </instance>
 <instance part="K1" gate="1" x="86.36" y="53.34" smashed="yes">
 <attribute name="VALUE" x="87.63" y="56.261" size="1.778" layer="96"/>
@@ -28259,9 +28259,10 @@ Relay Section (relays, leds, mosfets)
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="53.34" y1="43.18" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="43.18" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="35.56" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="35.56" x2="50.8" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="K1" gate="1" pin="2"/>
@@ -28470,26 +28471,35 @@ Relay Section (relays, leds, mosfets)
 <wire x1="106.68" y1="48.26" x2="106.68" y2="45.72" width="0.1524" layer="91"/>
 <junction x="106.68" y="48.26"/>
 <junction x="106.68" y="45.72"/>
+<pinref part="J2" gate="G$1" pin="3"/>
+<wire x1="27.94" y1="33.02" x2="25.4" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="33.02" x2="25.4" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="25.4" x2="53.34" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="25.4" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="E_LOCK" class="0">
 <segment>
-<wire x1="33.02" y1="45.72" x2="30.48" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="45.72" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="60.96" x2="99.06" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="60.96" x2="99.06" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="K1" gate="2" pin="S"/>
 <wire x1="99.06" y1="60.96" x2="99.06" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="58.42" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="5"/>
+<wire x1="27.94" y1="30.48" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="30.48" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="E_UNLOCK" class="0">
 <segment>
-<wire x1="33.02" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="43.18" x2="27.94" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="63.5" x2="170.18" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="K2" gate="2" pin="S"/>
 <wire x1="170.18" y1="63.5" x2="170.18" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="58.42" x2="172.72" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="6"/>
+<wire x1="48.26" y1="30.48" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="30.48" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$34" class="0">
