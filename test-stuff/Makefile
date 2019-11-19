@@ -1,6 +1,11 @@
-CC := gcc
-OUT := padding.out
-CFLAGS := -Wall
+src = $(wildcard src/*.c)
+obj = $(src:.c=.o)
 
-build:
-	$(CC) main.c -o $(OUT) $(CFLAGS)
+LDFLAGS = -Wall
+
+cktest.out: $(obj)
+	$(CC) -o $@ $^ $(LDFLAGS)
+
+.PHONY: clean
+clean:
+	rm -f $(obj) cktest.out

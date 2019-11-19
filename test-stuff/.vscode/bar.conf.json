@@ -1,7 +1,7 @@
 {
     "commands": {
-        "build": "make build",
-        "run": "./padding.out"
+        "build": "make",
+        "run": "./cktest.out"
     },
     "messages": {
         "building": true,
