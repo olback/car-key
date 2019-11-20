@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -27026,7 +27026,8 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/ANT-2.45-CHP-
 <plain>
 <text x="162.56" y="22.86" size="1.778" layer="94" align="top-left">TODO:
 Fix labels on remote
-Remove rulers</text>
+Remove rulers
+Add resistors on signal lines</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
